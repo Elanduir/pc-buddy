@@ -1,0 +1,7 @@
+.header {
+  border: 1px solid black;
+}
+
+.header.active {
+  border: 1px solid red;
+}
