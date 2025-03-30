@@ -1,17 +1,23 @@
 .header {
   border: none;
-  border-bottom: 1px solid black;
+  width: 100%;
   aspect-ratio: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 10%;
+  background-color: transparent;
+}
+
+.header:hover {
+  background-color: #dddddd;
 }
 
 .header.active {
-  background-color: #007095;
+  background-color: var(--accent);
 }
 
 .header-icon {
   aspect-ratio: 1;
-  height: 50px;
+  width: 80%;
 }

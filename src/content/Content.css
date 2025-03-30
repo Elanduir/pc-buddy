@@ -7,24 +7,36 @@
 
 .app-bar {
   display: flex;
-  height: 65px;
-  border-bottom: 1px solid black;
+  height: 70px;
+  border-bottom: var(--basic-border);
   align-items: center;
+  background-color: #f8f8f8;
+}
+
+.app-bar-icon {
+  width: 70px;
+  height: 100%;
+  box-sizing: border-box;
+  border-right: var(--basic-border);
+}
+
+.app-bar-title {
   padding-left: 2em;
 }
 
 .content {
-  height: 100%;
-  width: 100%;
   display: flex;
+  flex: 1;
   flex-direction: row;
   align-items: center;
-  background-color: rgb(230, 230, 230);
+  background-color: white;
 }
 
 .content-tab {
+  display: flex;
+  flex: 1;
   height: 100%;
-  width: 100%;
+  box-sizing: border-box;
 }
 
 .tab-border {

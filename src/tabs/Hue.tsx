@@ -2,12 +2,15 @@
 
 import { useEffect, useState } from "react";
 import "./Hue.css";
-import brightnessLow from "../res/icon/sun_low.svg";
-import brightnessMid from "../res/icon/sun_mid.svg";
-import brightnessHigh from "../res/icon/sun_high.svg";
+import brightnessLow from "../res/icon/brightness_low.svg";
+import brightnessMid from "../res/icon/brightness_mid.svg";
+import brightnessHigh from "../res/icon/brightness_high.svg";
+import hueLow from "../res/icon/hue_low.svg";
+import hueMid from "../res/icon/hue_mid.svg";
+import hueHigh from "../res/icon/hue_hig.svg";
 import minusIcon from "../res/icon/minus.svg";
 import plusIcon from "../res/icon/plus.svg";
-import onOffIcon from "../res/icon/on-off.svg";
+import onOffIcon from "../res/icon/on_off_outline_fill.svg";
 import { IconButton } from "../components/Button";
 import { useHueApi } from "../util/useHueApi";
 
@@ -32,7 +35,7 @@ export const Hue = () => {
     getAllBedrooms().then((r) => setBedrooms(r));
   }, [getAllBedrooms]);
 
-  const error = user ? "Error fetching groups" : "Missing URL Param 'hueUser'";
+  const error = user ? "Fetching groups..." : "Missing URL Param 'hueUser'";
 
   return (
     <div className="control-align">
@@ -89,19 +92,13 @@ const Control = ({ room, user }: { room: any; user: string | null }) => {
           />
         </div>
         <div className="button-group right">
-          <IconButton
-            icon={brightnessHigh}
-            onClick={() => setSaturation(0, id)}
-          />
+          <IconButton icon={hueLow} onClick={() => setSaturation(20, id)} />
           <IconButton
             btnClassName="middle-right"
-            icon={brightnessMid}
+            icon={hueMid}
             onClick={() => setSaturation(150, id)}
           />
-          <IconButton
-            icon={brightnessLow}
-            onClick={() => setSaturation(200, id)}
-          />
+          <IconButton icon={hueHigh} onClick={() => setSaturation(200, id)} />
         </div>
       </div>
       <div className="on-off-row">

@@ -3,7 +3,7 @@ import { Weather } from "../tabs/Weather";
 import "./Content.css";
 import { TabBar } from "../bar/TabBar";
 import { Tab } from "../tabs/Tab";
-import wsIcon from "../res/icon/ws_wohlen.png";
+import wsIcon from "../res/icon/weather.svg";
 import bulbIcon from "../res/icon/bulb.png";
 import { Hue } from "../tabs/Hue";
 
@@ -16,7 +16,7 @@ const tabs: Tab[] = [
   },
   {
     id: "hue",
-    name: "hue",
+    name: "Light Control",
     node: <Hue />,
     icon: bulbIcon,
   },
@@ -27,9 +27,10 @@ export const Content = () => {
   return (
     <div className="pc-buddy">
       <div className="app-bar">
-        <p>
+        <div className="app-bar-icon"></div>
+        <p className="app-bar-title">
           <strong>PC-Buddy </strong>
-          {tabs[activeTab].name}
+          <span className="accent-color">{tabs[activeTab].name}</span>
         </p>
       </div>
       <div className="content">
