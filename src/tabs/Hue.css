@@ -1,0 +1,65 @@
+.control-align {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.control-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.room-name {
+  width: 100%;
+  text-align: center;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.room-control-group {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.on-off-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+button-group ~ button {
+  background-color: none;
+  background: none;
+}
+
+.middle-left {
+  margin-right: 5em;
+}
+
+.middle-right {
+  margin-left: 5em;
+}
+
+.user-missing {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

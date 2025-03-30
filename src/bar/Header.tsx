@@ -12,7 +12,11 @@ export const Header = ({
 }) => {
   return (
     <button onClick={onChange} className={`header${active ? " active" : ""}`}>
-      {tab.icon ? <img src={tab.icon} alt={tab.id} /> : tab.name}
+      {tab.icon ? (
+        <img className="header-icon" src={tab.icon} alt={tab.id} />
+      ) : (
+        tab.name
+      )}
     </button>
   );
 };

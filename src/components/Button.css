@@ -1,0 +1,30 @@
+.icon-button {
+  background: none;
+  border: none;
+  -webkit-transition: background-color 100ms linear;
+  -ms-transition: background-color 100ms linear;
+  transition: background-color 100ms linear;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .icon-button:hover {
+    background-color: grey;
+  }
+}
+
+.icon-button {
+  border-radius: 100%;
+}
+
+.icon-button:active {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+.button-icon {
+  height: 4em;
+  display: block;
+}
+
+.incr {
+  height: 30px;
+}

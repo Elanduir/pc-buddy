@@ -1,6 +1,37 @@
+.pc-buddy {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-bar {
+  display: flex;
+  height: 65px;
+  border-bottom: 1px solid black;
+  align-items: center;
+  padding-left: 2em;
+}
+
 .content {
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  background-color: rgb(230, 230, 230);
+}
+
+.content-tab {
+  height: 100%;
+  width: 100%;
+}
+
+.tab-border {
+  height: 100%;
+  width: 100%;
+  border-radius: 0 2em 2em 0;
+  background-color: rgb(253, 253, 253);
+
+  box-shadow: 2px 0px 10px black;
 }

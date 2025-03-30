@@ -1,5 +1,9 @@
 export const Spotify = () => {
   return (
-    <iframe className="weather" title="wetter" src="https://www.spotify.com" />
+    <iframe
+      className="tab-iframe"
+      title="spotify"
+      src="https://www.strava.com"
+    />
   );
 };
