@@ -1,11 +1,6 @@
-.weather-wrapper {
-  display: flex;
-  flex: 1;
-  box-sizing: border-box;
-  padding: 2em;
-}
-
 iframe.weather {
+  box-sizing: border-box;
+  border: none;
   display: flex;
   flex: 1;
 }

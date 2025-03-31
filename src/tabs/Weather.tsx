@@ -9,21 +9,19 @@ export const Weather = () => {
       ) as HTMLIFrameElement | null;
 
       if (iframe) {
-        iframe.src = "";
+        iframe.src += "";
       }
       console.log("running");
-    }, 600000);
+    }, 300000);
     return () => clearInterval(interval);
   });
 
   return (
-    <div className="weather-wrapper">
-      <iframe
-        className="weather"
-        id="weather-iframe"
-        title="wetter"
-        src="https://www.wetterstation-wohlen.ch"
-      />
-    </div>
+    <iframe
+      className="weather"
+      id="weather-iframe"
+      title="wetter"
+      src="https://www.wetterstation-wohlen.ch"
+    />
   );
 };

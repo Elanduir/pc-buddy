@@ -10,7 +10,7 @@
 }
 
 .header:hover {
-  background-color: #dddddd;
+  background-color: var(--hover);
 }
 
 .header.active {

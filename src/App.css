@@ -5,12 +5,17 @@
   --basic-border: 1px solid #e7e7e7;
   --light-accent: #97c4d4;
   --accent: #007095;
+  --primary: #ffffff;
+  --secondary: #f8f8f8;
+  --hover: #dddddd;
   /* outline: 1px solid green; */
 }
 
 .app {
   height: 100svh;
   width: 100vw;
+  display: flex;
+  flex-direction: column;
 }
 
 .accent-color {

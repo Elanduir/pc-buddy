@@ -1,0 +1,6 @@
+.glattalp-webcam {
+  display: flex;
+  flex: 1;
+  border: none;
+  box-sizing: border-box;
+}

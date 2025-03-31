@@ -1,4 +1,4 @@
-import { Tab } from "../tabs/Tab";
+import { Tab } from "../content/Content";
 import "./Header.css";
 
 export const Header = ({

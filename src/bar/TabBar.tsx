@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./TabBar.css";
-import { Tab } from "../tabs/Tab";
+import { Tab } from "../content/Content";
 import { Header } from "./Header";
 
 export const TabBar = ({

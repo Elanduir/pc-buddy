@@ -94,6 +94,7 @@ export const useHueApi = (user: string | null) => {
     const path = `groups/${id}/action`;
     const body = {
       sat: saturation,
+      hue: 7726,
     };
     const cmd: Command = {
       path: path,
